@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   top: 0;
 `
 export const Logo = styled.img`
-  width: 20rem;
+  width: 24rem;
   height: 6rem;
   object-fit: cover;
 `
