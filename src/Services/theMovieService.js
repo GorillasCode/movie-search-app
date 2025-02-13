@@ -5,11 +5,12 @@ const BASE_URL = 'https://api.themoviedb.org/3'
 
 export const searchMovies = async query => {
   try {
-    const response = await axios.get(`${BASE_URL}/search/movie`, {
+    const response = await axios.get(`${BASE_URL}/search/movie/popular`, {
       params: {
         api_key: API_KEY,
         query: query,
-        language: 'en-US'
+        language: 'en-US',
+        page: 1
       }
     })
     return response.data.results
@@ -18,3 +19,4 @@ export const searchMovies = async query => {
     return []
   }
 }
+console.log(response.data.results)
