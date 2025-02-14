@@ -5,7 +5,7 @@ const BASE_URL = 'https://api.themoviedb.org/3'
 
 export const searchMovies = async query => {
   try {
-    const response = await axios.get(`${BASE_URL}/search/movie/popular`, {
+    const response = await axios.get(`${BASE_URL}/search/movie`, {
       params: {
         api_key: API_KEY,
         query: query,
@@ -19,4 +19,18 @@ export const searchMovies = async query => {
     return []
   }
 }
-console.log(response.data.results)
+
+export const getPopularMovies = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/movie/popular`, {
+      params: {
+        api_key: API_KEY,
+        language: 'en-US'
+      }
+    })
+    return response.data.results
+  } catch (error) {
+    console.error('ERROR', error)
+    return []
+  }
+}

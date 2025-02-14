@@ -1,14 +1,14 @@
 import './App.css'
 import SearchBar from './Components/SearchBar/SearchBar'
 import { Header } from './Components/Header/Header'
-import MovieCard from './Components/MovieCard/MovieCard'
+import TrendingMovies from './Components/TrendingMovies/TrendingMovies'
 
 function App() {
   return (
     <div>
       <Header />
       <SearchBar />
-      {/* <MovieCard /> */}
+      <TrendingMovies />
     </div>
   )
 }

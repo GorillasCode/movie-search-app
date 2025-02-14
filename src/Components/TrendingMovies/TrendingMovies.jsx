@@ -1,7 +1,46 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+
+import { getPopularMovies } from '../../Services/theMovieService'
+import MovieCard from '../MovieCard/MovieCard'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 const TrendingMovies = () => {
-  return <div>TrendingMovies</div>
+  const [movies, setMovies] = useState([])
+
+  useEffect(() => {
+    const fetchMovies = async () => {
+      const data = await getPopularMovies()
+      setMovies(data)
+    }
+    fetchMovies()
+  }, [])
+  return (
+    <div>
+      <Swiper
+        style={{ width: '100%', height: 'auto' }}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 4 }
+        }}
+        modules={[Navigation, Pagination]}
+        spaceBetween={500}
+        navigation
+        pagination={{ clickable: true }}
+      >
+        {movies.map(movie => (
+          <SwiperSlide key={movie.id}>
+            <MovieCard movie={movie} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  )
 }
 
 export default TrendingMovies

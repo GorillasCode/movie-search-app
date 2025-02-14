@@ -1,13 +1,14 @@
 import React from 'react'
+import './MovieCard.styled.js'
 
 const MovieCard = ({ movie }) => {
   return (
     <div>
       <img
         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-        alt={movieTitle}
+        alt={movie.Title}
       />
-      <h3>{movie.title}</h3>
+      <h2>{movie.title}</h2>
       <p>{movie.overview}</p>
     </div>
   )
