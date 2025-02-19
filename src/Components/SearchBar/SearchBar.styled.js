@@ -27,12 +27,15 @@ export const StyledButton = styled.button`
     font-size: 16px;
     font-weight: 600;
     justify-content: center;
+    position: absolute;
     line-height: 20px;
     max-width: 480px;
     min-height: 40px;
     min-width: 0px;
     overflow: hidden;
     margin-top: 1rem;
+    position: absolute;
+    right: 40rem;
     padding: 0px;
     padding-left: 20px;
     padding-right: 20px;

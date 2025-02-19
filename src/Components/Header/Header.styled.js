@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
+  position: absolute;
   top: 0;
 `
 export const Logo = styled.img`
