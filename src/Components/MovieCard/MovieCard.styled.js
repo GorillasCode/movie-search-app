@@ -7,7 +7,6 @@ export const MovieContainer = styled.div`
 `
 
 export const MoviePoster = styled.img`
-  margin-top: 7rem;
   width: 80%;
   height: auto;
   border-radius: 10px;
