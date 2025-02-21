@@ -16,7 +16,7 @@ export const Header = () => {
         style={{
           marginLeft: 10,
           position: 'absolute',
-          right: '36rem',
+          right: '36.5rem',
           cursor: 'pointer'
         }}
       />

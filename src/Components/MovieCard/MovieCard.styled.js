@@ -19,6 +19,7 @@ export const MovieTitle = styled.h2`
   font-style: italic;
 `
 export const MovieOverview = styled.p`
-  font-family: monospace;
+  font-family: montserrat, monospace;
   font-size: 1rem;
+  font-weight: 500;
 `

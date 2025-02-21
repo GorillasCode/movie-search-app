@@ -13,7 +13,7 @@ const MovieCard = ({ movie }) => {
         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
         alt={movie.Title}
       />
-      <MovieTitle>{movie.title}</MovieTitle>
+      {/* <MovieTitle>{movie.title}</MovieTitle> */}
       <MovieOverview>{movie.overview}</MovieOverview>
     </MovieContainer>
   )
