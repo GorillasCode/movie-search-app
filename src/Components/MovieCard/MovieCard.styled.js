@@ -16,6 +16,7 @@ export const MovieTitle = styled.h2`
   margin-top: 1rem;
   font-size: 2rem;
   font-family: monospace;
+  font-style: italic;
 `
 export const MovieOverview = styled.p`
   font-family: monospace;

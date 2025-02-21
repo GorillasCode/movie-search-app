@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 `
 export const Logo = styled.img`
   width: 24rem;

@@ -19,20 +19,19 @@ const TrendingMovies = () => {
     }
     fetchMovies()
   }, [])
+
   return (
     <div>
       <Swiper
         style={{ width: '100%', height: 'auto' }}
-        key={movies.length}
         slidesPerView={1}
         breakpoints={{
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 4 }
         }}
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={50}
-        navigation
-        autoplay={{ delay: 1000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
       >
         {movies.map(movie => (
