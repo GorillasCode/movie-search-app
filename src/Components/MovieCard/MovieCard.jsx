@@ -1,9 +1,9 @@
-import React from 'react'
+import { React, useState } from 'react'
 import {
   MovieContainer,
   MoviePoster,
-  MovieTitle,
-  MovieOverview
+  MovieOverlay,
+  MovieSynopsys
 } from './MovieCard.styled.js'
 
 const MovieCard = ({ movie }) => {
@@ -11,10 +11,11 @@ const MovieCard = ({ movie }) => {
     <MovieContainer>
       <MoviePoster
         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-        alt={movie.Title}
+        alt={movie.title}
       />
-      {/* <MovieTitle>{movie.title}</MovieTitle> */}
-      <MovieOverview>{movie.overview}</MovieOverview>
+      <MovieOverlay>
+        <MovieSynopsys>{movie.overview}</MovieSynopsys>
+      </MovieOverlay>
     </MovieContainer>
   )
 }
