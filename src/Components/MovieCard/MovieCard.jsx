@@ -3,7 +3,8 @@ import {
   MovieContainer,
   MoviePoster,
   MovieOverlay,
-  MovieSynopsys
+  MovieSynopsys,
+  MovieTitle
 } from './MovieCard.styled.js'
 
 const MovieCard = ({ movie }) => {
@@ -14,6 +15,7 @@ const MovieCard = ({ movie }) => {
         alt={movie.title}
       />
       <MovieOverlay>
+        {/* <MovieTitle>{movie.title}</MovieTitle> */}
         <MovieSynopsys>{movie.overview}</MovieSynopsys>
       </MovieOverlay>
     </MovieContainer>

@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -6,5 +13,12 @@
 }
 
 body {
-  background-color: #f0f8ff;
+  background: linear-gradient(to bottom, #050a1a, #071024, #0a172e);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
 }

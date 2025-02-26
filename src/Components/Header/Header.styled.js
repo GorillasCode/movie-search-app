@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.div`
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   top: 0;
@@ -9,12 +10,12 @@ export const HeaderContainer = styled.div`
 `
 export const Logo = styled.img`
   width: 24rem;
-  height: 6rem;
+  height: 8rem;
   object-fit: cover;
 `
 
 export const SearchBarInput = styled.input`
-  width: 40%;
+  width: 15rem;
   max-width: 22rem;
   height: 2rem;
   border-radius: 4px;
@@ -31,4 +32,5 @@ export const SearchBarInput = styled.input`
   :hover {
     box-shadow: rgb(231 238 236) 0px 0px 0px 3px;
   }
+  margin-top: 1rem;
 `

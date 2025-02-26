@@ -1,6 +1,6 @@
 import React from 'react'
 import { HeaderContainer, Logo, SearchBarInput } from './Header.styled.js'
-import LogoImage from '../../assets/Logo.png'
+import LogoImage from '../../assets/NewLogo.png'
 import SearchIcon from '@mui/icons-material/Search'
 export const Header = () => {
   return (
@@ -12,20 +12,15 @@ export const Header = () => {
         variant="filled"
         placeholder="Search for movies"
       />
-      <SearchIcon
+      {/* <SearchIcon
         style={{
           marginLeft: 10,
           position: 'absolute',
-          right: '36.5rem',
+          right: '20rem',
+          top: '3.7rem',
           cursor: 'pointer'
         }}
-      />
-      {/* <StyledButton>Search</StyledButton> */}
+      /> */}
     </HeaderContainer>
   )
 }
-
-// right: 35rem;
-// position: absolute;
-// font-size: 30px;
-// margin-left: 10px;

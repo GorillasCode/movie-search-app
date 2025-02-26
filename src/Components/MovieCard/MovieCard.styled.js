@@ -4,7 +4,7 @@ export const MovieContainer = styled.div`
   position: relative;
   width: 20rem;
   height: 25rem;
-  overflow: hidden;
+  overflow: visible;
 
   &:hover > div {
     opacity: 1;
@@ -21,15 +21,14 @@ export const MoviePoster = styled.img`
 export const MovieTitle = styled.h2`
   margin-top: 1rem;
   font-size: 2rem;
-  font-family: monospace;
-  font-style: italic;
+  font-family: Montserrat;
 `
 export const MovieOverlay = styled.div`
   position: absolute;
   bottom: 0;
-  width: 100%;
-  height: 50%;
-  background: rgba(0, 0, 0, 0.7);
+  width: 93.8%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
   color: white;
   display: flex;
   align-items: center;
@@ -38,14 +37,13 @@ export const MovieOverlay = styled.div`
   text-align: center;
   opacity: 0;
   transform: translateY(100%);
-  transition: all 0.3s ease-in-out;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
 `
 
 export const MovieSynopsys = styled.p`
   margin: 0;
-  padding: 5px;
+  padding: 0.8rem;
   width: 100%;
   font-size: clamp(10px, 2vw, 16px);
   font-family: Montserrat;

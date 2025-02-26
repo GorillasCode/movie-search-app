@@ -27,11 +27,11 @@ const TrendingMovies = () => {
         slidesPerView={1}
         breakpoints={{
           640: { slidesPerView: 2 },
-          1024: { slidesPerView: 4 }
+          1024: { slidesPerView: 3 }
         }}
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={50}
-        // autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
       >
         {movies.map(movie => (
